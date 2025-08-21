@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BrandStuff</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">BrandStuff</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact & Feedback</h1>
+            </div>
+        </section>
+        
+        <section class="contact-page-section">
+            <div class="container">
+                <div class="contact-details">
+                    <h2>Our Contact Details</h2>
+                    <div class="info-item">
+                        <h3>📞 Mobile Number</h3>
+                        <p>+91 7906380774</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>✉️ Email Address</h3>
+                        <p>raghu1932000@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📍 Address</h3>
+                        <p>123 BrandStuff Lane, Agra, India</p>
+                    </div>
+                </div>
+
+                <div class="feedback-form">
+                    <h2>Feedback Form</h2>
+                    <p>Your feedback is valuable to us. Please fill out the form below.</p>
+                    <form onsubmit="event.preventDefault(); alert('Thank you for your feedback!');">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message / Feedback</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Submit Feedback</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 BrandStuff. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
+  
